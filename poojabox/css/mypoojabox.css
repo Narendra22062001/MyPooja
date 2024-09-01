@@ -1,0 +1,643 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.offer {
+    background-color: #e85992;
+    padding: 4.5px;
+    text-align: center;
+    font-size: 15px;
+    font-style: arial;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.border-box {
+    border: 1px solid #dfddde;
+    padding: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 50px; /* Adjust this value as needed */
+}
+
+.logo{
+    margin-left: 30px;
+    padding: 10px;
+}
+.right-section {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.search button, .cart {
+    margin-left: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+}
+
+.search button {
+    font-size: 20px; /* Icon size */
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+}
+
+.cart i {
+    margin-right: 5px;
+}
+
+.navbar {
+    display: flex;
+    /* justify-content: center; Center the ul list */
+    /* align-items: center; */
+    padding: 10px;
+    font-size: 20px;
+    /* font-weight: bold; */
+    letter-spacing: 1px;
+    flex-grow: 1; /* Ensure the navbar takes up available space */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    padding: 10px; /* Add horizontal padding for spacing */
+}
+
+.navbar ul li a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: #333; */
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+    padding: 10px;
+} */
+
+.dropdown-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 10px; /* Space between links */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+
+/* .video-container {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; 
+    z-index: 1;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+} */
+
+/* Dropdown */
+.dropdown-content {
+    display: none; /* Initially hidden */
+    position: absolute;
+    background-color: white;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000; /* High z-index to ensure it appears above other elements */
+    padding: 10px;
+}
+
+.dropdown-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 10px; /* Space between links */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+
+/* Video Container */
+.video-container {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; 
+    z-index: 1; 
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1; 
+}
+
+
+
+
+.image-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.image-track {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-circle {
+    width: 150px; /* Size of the image circle */
+    height: 150px; /* Size of the image circle */
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 15px; /* Margin between images */
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the label horizontally */
+}
+
+.image-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.image-label {
+text-align: center;
+margin-top: 10px;
+}
+
+
+
+
+.arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px; /* Size of the arrows */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    display: none; /* Hide arrows initially */
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+
+
+/* info-section */
+.info-section {
+    padding: 35px;
+    /* background-color: #f9f9f9; */
+}
+
+.info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.info-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.see-all-button {
+    background-color: #d3134f;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+.see-all-bu {
+    background-color: #d3134f; /* Initial background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    padding: 5px 20px; /* Padding around the text */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 16px; /* Font size */
+    width: 100%; /* Full width */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.see-all-bu:hover {
+    color: black; /* Background color on hover */
+}
+
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+.label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+    white-space: nowrap;      /* Prevents text from wrapping */
+    overflow: hidden;         /* Hides overflow text */
+    text-overflow: ellipsis;  /* Adds the ellipsis (...) */
+    display: block;           /* Ensures the label acts as a block-level element */
+    max-width: 100%;          /* Ensures the label width doesn't exceed the container */
+}
+
+.image-grid-item {
+    width: 200px; /* Increased width for larger aspect ratio */
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 1px;
+    text-align: left;
+    position: relative;
+}
+
+.image-grid-item img {
+    width: 100%;
+    height: 180px; /* Increased height */
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.discount {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e85992;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 6px 15px;
+    border-radius: 3px;
+    margin: 4px;
+    text-align: center;
+}
+.price {
+    position: absolute;
+    bottom: 60px;
+    right: 10px;
+    /* background-color: #e85992; */
+    color: white;
+    font-size: 19px;
+    /* font-weight: bold; */
+    padding: 6px 25px;
+    /* border-radius: 3px; */
+    margin: 8px;
+    text-align: center;
+    
+}
+.price p{
+    text-decoration: line-through;
+    margin-right: 15px;
+}
+p, p1 {
+    display: inline; /* Ensure both elements appear on the same line */
+    font-size: 16px; /* Adjust the font size as needed */
+    color: white; /* Text color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    white-space: nowrap;
+    
+}
+
+p, p2{
+    margin-right: 30px;
+
+}
+
+
+.add-to-cart-button {
+    width: 100%; /* Same width as image */
+    background-color: #d3134f;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+/* Video Container */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    z-index: 1; /* Lower z-index */
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1; /* Ensure the video stays behind the dropdown */
+}
+
+/* Navbar */
+.navbar {
+    position: relative;
+    z-index: 10; /* Ensure navbar is above the video */
+}
+
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: white;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000; /* Higher z-index to appear over video */
+    padding: 10px;
+}
+
+/* Show the dropdown on click */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.content {
+    max-height: 2em; /* Show only 2 lines initially */
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin: 50px;
+}
+
+.content.show {
+    max-height: 2000px; /* Adjust as necessary */
+}
+
+.read-more, .read-less {
+    color: #d3134f;
+    cursor: pointer;
+    /* text-decoration: underline; */
+    text-align: center;
+    /* display: block; */
+    margin: 30px;
+}
+
+.separator {
+    width: auto;
+    /* margin: 10px; */
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+
+.vertical-lines {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 20px 0; */
+}
+
+.vertical-line {
+    width: 2px;
+    height: 50px; /* Adjust the height as needed */
+    background-color: #ccc; /* Light gray color for the line */
+    /* margin:  20px;  */
+   
+}
+
+.image {
+    width: 40px; /* Adjust the size of the images as needed */
+    height: auto;
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 20px;
+}
+
+
+.footerSection {
+  background-color: #ffafb6;
+  padding-top: 2%;
+  padding-left: 4%;
+}
+.facebook{
+  letter-spacing: 1.5px;
+  font-family: 'Hind', sans-serif;
+  font-size: 0.9rem;
+}
+.PoojaImage{
+  width: 175px;
+  height: 175px; 
+  padding-right:10px ;
+}
+
+.imgaaa{
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  
+}
+
+h5{
+    color:white;
+  }
+
+.playst{
+  /* display: flex; */
+  margin: 1px;
+  /* padding: 10px; */
+}
+
+.appst{
+  /* display: flex; */
+  margin: 1px;
+  /* padding: 10px; */
+}
+
+.round {
+  border-radius: 50%;
+  transition: 0.5s all ease-in-out;
+}
+
+.RakhiSection {
+  margin-top: 3%;
+}
+
+.read {
+  text-align: center;
+}
+
+.read1 {
+  text-decoration: none;
+  color: #D61C4E;
+}
+
+.round:hover {
+  transform: scale(1.1);
+}
+
+.ViewAllButton {
+  background-color: #D61C4E;
+  color: white;
+  border-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Hind', sans-serif;
+  font-size: 15px;
+  padding-top: 1%;
+}
+
+.secondfontchange {
+  font-size: 0.8rem;
+  margin-bottom: 7px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-family: 'Hind', sans-serif;
+  font-weight: 500;
+}
+
+.secondButton {
+  background-color: #D61C4E;
+  color: white;
+  width: 100%;
+  border-radius: 0;
+  padding: 1px;
+  font-family: 'Hind', sans-serif;
+  letter-spacing: 2px;
+}
+.widthproblem {
+  width: 100%;
+  min-width: 113%;
+  height: auto;
+}
+
+
+
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom of the screen */
+    right: 20px;  /* Distance from the right edge of the screen */
+    z-index: 1000; /* Ensures the icon is on top of other elements */
+    border-radius: 50%; /* Make the container circular */
+    overflow: hidden; /* Ensure the content fits within the circle */
+}
+
+.whatsapp-icon a {
+    display: block;
+    border-radius: 80%; /* Make sure the link is also circular */
+}
+
+.whatsapp-icon img {
+    width: 60px; /* Adjust size as needed */
+    height: 60px; /* Ensure the height matches the width for a perfect circle */
+    object-fit: cover; /* Ensure the image covers the circle */
+    border-radius: 50%; /* Make the image circular */
+}

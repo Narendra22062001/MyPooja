@@ -1,0 +1,13 @@
+<svg width="12px" height="13px" viewBox="0 0 12 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-close">
+    <title>sort-cross-icon</title>
+    <g id="Mobile---Section" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="PLP-Mobile-Sort-by" transform="translate(-20.000000, -664.000000)" stroke="#31302C">
+            <g id="Group-5" transform="translate(0.000000, 651.000000)">
+                <g id="sort-cross-icon" transform="translate(21.000000, 14.400000)">
+                    <line x1="1.13686838e-13" y1="-1.13686838e-13" x2="10.2059119" y2="10.2351137" id="Path-9"/>
+                    <line x1="1.14575016e-13" y1="-1.11022302e-13" x2="10.2059119" y2="10.2351137" id="Path-9" transform="translate(5.102956, 5.117557) scale(-1, 1) translate(-5.102956, -5.117557) "/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

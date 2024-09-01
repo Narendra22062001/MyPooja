@@ -1,0 +1,23 @@
+<svg width="120px" height="30px" viewBox="0 0 120 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>fb</title>
+    <g id="symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-footer--opened" transform="translate(-195.000000, -483.000000)">
+            <g id="Group-23" transform="translate(60.000000, 483.000000)">
+                <g id="fb" transform="translate(135.000000, 0.000000)">
+                    <g id="Group-21" transform="translate(18.000000, 5.000000)" fill-rule="nonzero">
+                        <g id="Group-11" transform="translate(0.000000, 2.000000)">
+                            <g id="Facebook_Icon--Copy-2" fill="#FFFFFF">
+                                <path d="M6.125,7.7 L4.375,7.7 L4.375,15.4 L1.75,15.4 L1.75,7.7 L0,7.7 L0,5.13333333 L1.75,5.13333333 L1.75,3.42222222 C1.75,2.16455556 1.4945,0 4.375,0 L7,0 L7,2.56666667 L5.25,2.56666667 C4.77179764,2.57837276 4.38697214,2.95464658 4.375,3.42222222 L4.375,5.13333333 L7,5.13333333 L6.125,7.7 Z" id="Facebook_Icon--Copy"/>
+                            </g>
+                            <path d="M11.5893103,1.39728884 C12.0583833,1.39728884 12.4386422,1.77754335 12.4386422,2.24661105 C12.4386422,2.71567876 12.0583833,3.09593326 11.5893103,3.09593326 C11.1202372,3.09593326 10.7399784,2.71567876 10.7399784,2.24661105 C10.7399784,1.77754335 11.1202372,1.39728884 11.5893103,1.39728884 Z" id="Instagram_Icon-path" fill="#FFB9BE"/>
+                        </g>
+                        <text id="FACEBOOK" fill="#FFFFFF" font-family="Lato-Regular, Lato" font-size="12" font-weight="normal" line-spacing="20" letter-spacing="0.8">
+                            <tspan x="13" y="15">FACEBOOK</tspan>
+                        </text>
+                    </g>
+                    <rect id="Rectangle" stroke="#FFFFFF" x="0.5" y="0.5" width="119" height="29" rx="3"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

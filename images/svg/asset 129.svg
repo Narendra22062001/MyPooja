@@ -1,0 +1,25 @@
+<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-plus-2">
+    <title>plus-icon</title>
+    <defs>
+        <circle id="plus-2-path-1" cx="9.5" cy="9.5" r="9.5"/>
+        <filter x="-15.8%" y="-15.8%" width="131.6%" height="131.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.073208042 0" type="matrix" in="shadowBlurOuter1"/>
+        </filter>
+    </defs>
+    <g id="Custom-Box---Flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-Custom-box--Step--1" transform="translate(-337.000000, -294.000000)">
+            <g id="plus-icon" transform="translate(339.000000, 296.000000)">
+                <g id="Oval">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#plus-2-path-1"/>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#plus-2-path-1"/>
+                </g>
+                <g id="Group" transform="translate(5.000000, 5.000000)" fill="#D3134F">
+                    <rect id="Rectangle" x="4" y="0" width="1" height="9"/>
+                    <polygon id="Rectangle" transform="translate(4.500000, 4.500000) rotate(90.000000) translate(-4.500000, -4.500000) " points="4.04545455 -2.56544785e-13 4.95454545 -2.82149304e-13 4.95454545 9 4.04545455 9"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
